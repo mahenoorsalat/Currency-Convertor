@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+ 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F0F2F5;
+  font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ img{
+  background: none;
+ }
+.card
+{
+    background-color: #ffffff;
+    width: 55%;
+    min-width: 550px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ 
+h1{
+  /* padding: 16px; */
+  background: #fff;
+  font-size: 30px !important;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #333;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+.currency_exchnage
+{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  /* align-items: center; */
+}
+ 
+.input_container {
+  width: 30%;
+  height: fit-content;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background: #fff;
+}
+ 
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
+}
+ 
+.input_label {
+  font-size: 0.95rem;
+  color: #8B8E98;
+  font-weight: 600;
+  background: #fff;
+}
+ 
+.input_field {
+  width: auto;
+  height: 60px;
+  background: #fff;
+  padding: 0 0 0 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+ 
+.input_field:focus {
+  border: 1px solid transparent;
+  background: #fff;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+ 
+.output
+{
+  background: #ffffff;
+}
+ 
+ 
+h2 {
+  font-size: 17px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: #c8ffed;
+  padding: 26px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width:420px){
+  .card {
+    width: 100%;
+    min-width: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  h2 {
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #c8ffed;
+    padding: 26px;
+    border-radius: 10px;
+}
 }
